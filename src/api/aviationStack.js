@@ -3,7 +3,7 @@ import axios from 'axios';
 // NOTE: You need to set this environment variable in a .env file
 // VITE_AVIATIONSTACK_KEY=your_api_key_here
 const API_KEY = import.meta.env.VITE_AVIATIONSTACK_KEY;
-const BASE_URL = 'http://api.aviationstack.com/v1';
+const BASE_URL = 'https://api.aviationstack.com/v1';
 
 export const fetchFlightData = async (flightIata) => {
     if (!API_KEY) {
